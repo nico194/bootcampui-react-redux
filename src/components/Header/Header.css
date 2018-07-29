@@ -1,0 +1,16 @@
+.App-header{
+  background-color: rgb(48, 185, 196);
+  padding: 10px;
+}
+
+.imgCart{
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}

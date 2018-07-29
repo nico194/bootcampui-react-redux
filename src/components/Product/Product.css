@@ -1,0 +1,50 @@
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+ width: 250px;
+ height: 400px;
+ border-radius: 10px;
+ transform-style: preserve-3d;
+ transition: all 0.8s ease;
+
+}
+
+.thecard:hover{
+ transform: rotateY(180deg);
+}
+
+.thefront{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+
+}
+
+.theback{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 10px;
+ backface-visibility: hidden;
+ overflow: hidden;
+ background: rgba(246, 67, 1,0.9);
+ color: rgb(255, 255, 255);
+ text-align: center;
+ transform: rotateY(180deg);
+ padding: 10px;
+}
+
+.titleProduct{
+  text-shadow: 1px 1px rgb(116, 111, 112);
+  color: rgba(246, 67, 1,0.9)
+}
+
+.priceProduct{
+  margin-top: 10px;
+  text-align: right;
+  font-size: 14px;
+  color: rgba(246, 67, 1,0.9)
+}
