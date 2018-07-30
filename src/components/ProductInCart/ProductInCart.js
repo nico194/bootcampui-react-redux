@@ -6,7 +6,7 @@ class ProductInCart extends Component {
   render(){
     return (
       <div className="App-productInCart">
-        {this.props.product.product.name} - ${this.props.product.product.price} - <img src={trash} alt={this.props.product.product.name} onClick={this.props.click}/>
+        {this.props.product.name} - ${this.props.product.price} - {this.props.product.cant} - <img src={trash} alt={this.props.product.name} onClick={this.props.click}/>
       </div>
     );
   }

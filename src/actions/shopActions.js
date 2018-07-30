@@ -5,9 +5,11 @@ const addProduct = (product) => ({
 	payload: { product }
 });
 
-const removeProduct = (product) => ({
+const removeProduct = (id, price) => ({
 	type: actionTypes.REMOVE_FROM_SHOP,
-	payload: { product }
+	payload: { id,
+							price
+	 					}
 });
 
 

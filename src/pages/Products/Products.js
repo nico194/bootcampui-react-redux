@@ -31,7 +31,7 @@ class Products extends Component {
     const orders = shops.orders.length ? shops.orders.map((product, index) => {
       return (
           <ProductInCart key={index} product={product} click={() => {
-            this.props.removeProduct(product);
+            this.props.removeProduct(product.product.id, product.product.price);
           }} />
     		);
     	}) : <p>No hay productos en el carrito</p>;
